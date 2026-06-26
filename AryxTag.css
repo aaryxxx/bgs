@@ -1,0 +1,24 @@
+/***********************************************************************************************************************
+* @name AryxTag
+* @description Adds "Aryx" wordmark to the top left of Discord.
+***********************************************************************************************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+
+[class*="wordmark_"] svg {
+    display: none !important;
+}
+
+[class*="wordmark_"]::after {
+    content: "aryx"; /* Burada orijinalinde Chillax yazıyordu, senin için aryx yaptım */
+    font-family: "Monoton", cursive;
+    font-size: 22px;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ff7300, #fe365c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 6px;
+    left: 14px;
+    font-weight: 400;
+}
