@@ -2932,3 +2932,27 @@ html.theme-light .modeSelected__2ea32 .name__2ea32 {
 .chatTypingGradientNotAtBottom__36d07.chatGradientBase__36d07 {
     display: none !important;
 }
+/* Tum engelleri asan sol ust aryx kodu */
+[class*="wordmarkWindows_"] svg,
+[class*="wordmarkMacOS_"] svg,
+div[class*="wordmark_"] svg {
+    display: none !important;
+}
+
+[class*="wordmarkWindows_"]::after,
+[class*="wordmarkMacOS_"]::after,
+div[class*="wordmark_"]::after {
+    content: "aryx" !important;
+    font-family: "Monoton", cursive !important;
+    font-size: 22px !important;
+    letter-spacing: 2px !important;
+    background: linear-gradient(90deg, #ff7300, #fe365c) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    position: absolute !important;
+    top: 6px !important;
+    left: 14px !important;
+    font-weight: 400 !important;
+    display: block !important;
+    z-index: 9999 !important;
+}
